@@ -1,0 +1,29 @@
+{
+  "name": "taboo-data",
+  "version": "2.0.0",
+  "type": "module",
+  "main": "./src/TabooData.js",
+  "description": "A dataset for Taboo games",
+  "keywords": [
+    "game",
+    "data",
+    "dataset",
+    "Taboo"
+  ],
+  "homepage": "https://github.com/Kovah/Taboo-Data#readme",
+  "author": "Kovah <mail@kovah.de>",
+  "license": "GPL-3.0-or-later",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kovah/Taboo-Data.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Kovah/Taboo-Data/issues"
+  },
+  "devDependencies": {
+    "jest": "^27.0.6"
+  },
+  "scripts": {
+    "test": "node --experimental-vm-modules node_modules/.bin/jest"
+  }
+}

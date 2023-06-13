@@ -1,0 +1,65 @@
+// Customisation of https://github.com/airbnb/javascript
+{
+    "env": {
+        "browser": true,
+        "commonjs": true,
+        "es2021": true
+    },
+    "extends": "eslint:recommended",
+    "parserOptions": {
+        "ecmaVersion": "latest",
+        "sourceType": "module"
+    },
+    "rules": {
+        "no-var": "warn",
+        "no-new-object": "error",
+        "no-new-func": "error",
+        "no-array-constructor": "error",
+        "no-plusplus": "warn",
+        "no-nested-ternary": "error",
+        "no-trailing-spaces": "warn",
+        "no-multiple-empty-lines": [
+            "warn",
+            {
+                "max": 1,
+                "maxEOF": 1,
+                "maxBOF": 0
+            }
+        ],
+        "brace-style": "warn",
+        "eqeqeq": [
+            "error",
+            "smart"
+        ],
+        "indent": [
+            "error",
+            "tab", 
+            {
+                "SwitchCase": 1
+            }
+        ],
+        "key-spacing": "warn",
+        "space-before-blocks": "error",
+        "prefer-template": "error",
+        "spaced-comment": "error",
+        "space-infix-ops": "error",
+        "space-in-parens": "error",
+        "template-curly-spacing": [
+            "error",
+            "never"
+        ],
+        "no-console": "warn",
+        "comma-style": "error",
+        "comma-dangle": [
+            "error",
+            {
+                "arrays": "always-multiline",
+                "objects": "always-multiline",
+                "imports": "never",
+                "exports": "never",
+                "functions": "never"
+            }
+        ],
+        "semi":"warn"
+    }
+}

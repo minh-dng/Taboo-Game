@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html data-theme="dark" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Taboo - Game">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taboo — Game</title>
+    <link rel="shortcut icon" href="/assets/media/card-logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="/pico-master/css/pico.min.css">
+    <link rel="stylesheet" href="/css/game.css">
+    <script src="/js/game.js" defer>
+    </script>
+</head>
+
+<body>
+    <main class="container">
+        <nav>
+            <ul id="container-team">
+                <li>
+                    <hgroup data-team="one">
+                        <h2 id="team-one-label">
+                            <ins>Team 1</ins>
+                        </h2>
+                        <h3 id="team-one-points">
+                            <strong>0</strong>
+                        </h3>
+                    </hgroup>
+                </li>
+                <li>
+                    <hgroup data-team="two">
+                        <h2 id="team-two-label">Team 2</h2>
+                        <h3 id="team-two-points">0</h3>
+                    </hgroup>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a role="button" href="/" class="secondary outline">🏠</a>
+                </li>
+            </ul>
+        </nav>
+
+        <section id="card-display">
+            <div class="grid">
+                <div id="grid-card-display">
+                    <article>
+                        <h2 id="card-guess"></h2>
+                        <footer id="card-prompt"></footer>
+                    </article>
+                </div>
+
+                <div>
+                    <div id="game-information">
+                        <div class="contrast" id="button-timer" role="button">
+                            <h2 id="container-timer">
+                                <span id="timer-status">⏸️</span>
+                                <span id="timer-count">30</span>
+                            </h2>
+                        </div>
+                        <h2 id="container-card-left">
+                            🔮 <span id="card-left"></span>
+                        </h2>
+                    </div>
+                    <div id="action">
+                        <button id="button-next" data-button="next">Next</button>
+                        <button id="button-skip" class="secondary" data-button="skip">Skip</button>
+                        <button class="contrast" id="button-buzz" data-button="buzz">Buzz</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

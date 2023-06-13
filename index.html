@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html data-theme="dark" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Taboo - Game">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taboo — Home</title>
+    <link rel="shortcut icon" href="./assets/media/card-logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="./pico-master/css/pico.classless.css">
+    <script src="./js/main.js" defer></script>
+</head>
+
+<body>
+    <main>
+        <nav>
+            <ul>
+                <li>
+                    <hgroup>
+                        <h1>
+                            Taboo — Game
+                        </h1>
+                        <h2>
+                            by <strong>Minh Dang</strong>.
+                            <a href="https://github.sydney.edu.au/mdan6059/Self-learning" rel="norefferer"
+                                target="_blank">⭐
+                                GitHub
+                            </a>
+                        </h2>
+                    </hgroup>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a role="button" href="./">🏠 Home</a>
+                </li>
+                <li>
+                    <a href="https://en.wikipedia.org/wiki/Taboo_(game)#Rules" rel="norefferer" target="_blank">
+                        🧩 Rule
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+
+        <section id="setup">
+            <h3>Setup</h3>
+            <form id="setupForm" autocomplete="off">
+                <fieldset>
+                    <legend>
+                        <strong>Names</strong>
+                    </legend>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <label for="team_1">Team 1</label>
+                                    <input type="text" name="team_1" data-group="teams" placeholder="Team 1" autofocus
+                                        maxlength="20">
+                                </td>
+                                <td>
+                                    <label for="team_2">Team 2</label>
+                                    <input type="text" name="team_2" data-group="teams" placeholder="Team 2"
+                                        maxlength="20">
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </fieldset>
+                <fieldset>
+                    <legend>
+                        <strong>Deck Settings</strong>
+                    </legend>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <label for="language">Language</label>
+                                    <select name="language" id="language">
+                                        <option value="en" selected>English</option>
+                                        <option value="de">Deutsch</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <label for="deck">Deck
+                                    </label>
+                                    <details role="list" name="deck">
+                                        <summary aria-haspopup="listbox">Select deck(s)</summary>
+                                        <ul role="listbox">
+                                            <li>
+                                                <label><input type="checkbox" name="all">All</label>
+                                            </li>
+                                        </ul>
+                                    </details>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </fieldset>
+                <button type="submit">Start Game</button>
+            </form>
+        </section>
+
+        <section id="shortcut">
+            <h3>Shortcuts</h3>
+            <ul>
+                <li>
+                    <span><kbd>→</kbd> or <kbd>Enter</kbd> — Next</span>
+                </li>
+                <li>
+                    <span><kbd>Shift</kbd> or <kbd>↑</kbd> — Skip</span>
+                </li>
+                <li>
+                    <span><kbd>←</kbd> or <kbd>Space</kbd> — Buzz</span>
+                </li>
+                <li>
+                    <span><kbd>Backspace</kbd> or <kbd>Escape</kbd> — Pause/Continue Timer</span>
+                </li>
+            </ul>
+        </section>
+    </main>
+</body>
+
+</html>

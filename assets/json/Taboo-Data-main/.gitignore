@@ -1,0 +1,10 @@
+/.idea
+/node_modules
+/scripts/output.txt
+/test
+/vendor/
+
+.phpunit.result.cache
+mix-manifest.json
+composer.lock
+package-lock.json
